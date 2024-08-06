@@ -11,6 +11,7 @@
     --spacing-3: 16px;
     --spacing-4: 24px;
     --spacing-5: 32px;
+    --spacing-6: 64px;
 }
 
 body {
@@ -47,6 +48,7 @@ h1 {
     font-size: 32px;
     font-weight: 600;
     color: var(--white);
+    margin: 0;
 }
 
 h1 span {
@@ -57,6 +59,7 @@ h2 {
     font-size: 32px;
     font-weight: 500;
     color: var(--white);
+    margin: 0;
 }
 
 h3 {
@@ -70,10 +73,12 @@ h4 {
     font-size: 16px;
     font-weight: 500;
     color: var(--white);
+    margin: 0;
 }
 
 p {
     font-size: 16px;
+    margin: 0;
 }
 
 button {
@@ -126,4 +131,47 @@ button:hover {
 .invisible-link {
     color: var(--white);
     text-decoration: none;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacing-6);
+}
+
+.hero-text {
+
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image-picture {
+    max-width: 400px;
+    height: auto;
+    -webkit-mask-image: linear-gradient(var(--background-color), transparent 99.9%);
+    mask-image: linear-gradient(var(--background-color), transparent 99%);
+    
+}
+
+.hero-image-tag {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-1);
+    background-color: var(--background-color);
+    border: 1px solid var(--gray);
+    padding: var(--spacing-1);
+    width: fit-content;
+    position: relative;
+    top: -20px;
+}
+
+.tag-color {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
 }
