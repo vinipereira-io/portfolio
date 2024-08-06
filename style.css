@@ -11,7 +11,7 @@
     --spacing-3: 16px;
     --spacing-4: 24px;
     --spacing-5: 32px;
-    --spacing-6: 64px;
+    --spacing-6: 100px;
 }
 
 body {
@@ -46,6 +46,7 @@ main {
 
 h1 {
     font-size: 32px;
+    line-height: 1.2;
     font-weight: 600;
     color: var(--white);
     margin: 0;
@@ -57,6 +58,7 @@ h1 span {
 
 h2 {
     font-size: 32px;
+    line-height: 1.2;
     font-weight: 500;
     color: var(--white);
     margin: 0;
@@ -64,6 +66,7 @@ h2 {
 
 h3 {
     font-size: 24px;
+    line-height: 1.2;
     font-weight: 600;
     color: var(--white);
     margin: 0;
@@ -71,6 +74,7 @@ h3 {
 
 h4 {
     font-size: 16px;
+    line-height: 1.5;
     font-weight: 500;
     color: var(--white);
     margin: 0;
@@ -79,6 +83,7 @@ h4 {
 p {
     font-size: 16px;
     margin: 0;
+    line-height: 1.5;
 }
 
 button {
@@ -137,11 +142,22 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: var(--spacing-6);
+    column-gap: 88px;
 }
 
 .hero-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-3);
+}
 
+.buttons-container {
+    display: flex;
+    column-gap: var(--spacing-4);
+}
+
+.hero-text .buttons-container {
+    margin-top: 16px;
 }
 
 .hero-image {
