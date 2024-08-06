@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+    --background-color: #282C33;
+    --primary-color: #00F4CF;
+    --gray: #ABB2BF;
+    --white: #FFFFFF;
+
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --spacing-5: 32px;
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--gray);
+    font-family: 'Fira Code', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    height: 44px;
+    padding: var(--spacing-1) var(--spacing-3);
+    background: none;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    font-family: 'Fira Code', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: hsl(219 14 71 / 20%);
+}
+
+.primary-button {
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-item {
+    margin: var(--spacing-2);
+}
+
+.nav-item span {
+    color: var(--primary-color);
+}
