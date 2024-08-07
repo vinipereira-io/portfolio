@@ -11,7 +11,7 @@
     --spacing-3: 16px;
     --spacing-4: 24px;
     --spacing-5: 32px;
-    --spacing-6: 64px;
+    --spacing-6: 128px;
 }
 
 body {
@@ -44,7 +44,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 124px;
+    margin-top: var(--spacing-6);
     row-gap: var(--spacing-6);
 }
 
