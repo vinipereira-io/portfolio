@@ -89,11 +89,6 @@ p {
     line-height: 1.5;
 }
 
-i {
-    margin: 0;
-    font-size: 24px;
-}
-
 .highlighted-text {
     color: var(--primary-color);
 }
@@ -328,6 +323,11 @@ hr {
     display: flex;
     column-gap: var(--spacing-2);
     align-items: center;
+}
+
+.message-me-icon {
+    font-size: 20px;
+    padding: 0;
 }
 
 footer {
