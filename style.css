@@ -11,7 +11,8 @@
     --spacing-3: 16px;
     --spacing-4: 24px;
     --spacing-5: 32px;
-    --spacing-6: 160px;
+    --spacing-6: 88px;
+    --spacing-7: 160px;
 }
 
 body {
@@ -44,8 +45,8 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-6);
-    row-gap: var(--spacing-6);
+    margin-top: var(--spacing-7);
+    row-gap: var(--spacing-7);
 }
 
 h1 {
@@ -167,7 +168,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 88px;
+    column-gap: var(--spacing-6);
 }
 
 .hero-text {
@@ -197,7 +198,6 @@ button:hover {
     height: auto;
     -webkit-mask-image: linear-gradient(var(--background-color), transparent 99.9%);
     mask-image: linear-gradient(var(--background-color), transparent 99%);
-    
 }
 
 .hero-image-tag {
@@ -271,4 +271,24 @@ hr {
     flex-direction: column;
     padding: var(--spacing-3);
     row-gap: var(--spacing-3);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: var(--spacing-6);    
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-3);
+}
+
+.about-image {
+    max-width: 400px;
+    height: auto;
+    -webkit-mask-image: linear-gradient(var(--background-color), transparent 99%);
+    mask-image: linear-gradient(var(--background-color), transparent 99%);
 }
