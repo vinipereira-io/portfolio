@@ -257,7 +257,10 @@ hr {
 .project-cover {
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit: cover;
+    filter: saturate(0);
+    -webkit-mask-image: linear-gradient(var(--background-color), transparent 99.9%);
+    mask-image: linear-gradient(var(--background-color), transparent 99%);
 }
 
 .project-tags {
