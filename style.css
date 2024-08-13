@@ -89,6 +89,14 @@ p {
     line-height: 1.5;
 }
 
+a {
+    color: var(--gray);
+}
+
+a:hover {
+    color: var(--white);
+}
+
 .highlighted-text {
     color: var(--primary-color);
 }
