@@ -403,7 +403,6 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    justify-items: ;
     align-items: center;
     gap: var(--spacing-5);
     flex-wrap: wrap;
