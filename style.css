@@ -285,7 +285,7 @@ hr {
     display: flex;
     flex-direction: column;
     flex: 1; /* Ensures that all cards take up equal space */
-    min-width: 340px;
+    min-width: 300px;
     max-width: calc(50% - var(--spacing-3));
     border: 1px solid var(--gray);
 }
